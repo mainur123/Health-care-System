@@ -21,9 +21,6 @@ li a:hover {
   background-color: #111;
 }
 
-.con{
-  color: blue;
-}
 li{
   float: left;
 }
@@ -37,7 +34,7 @@ li a {
 
 
 
-.active {
+.active:active {
   background-color: #4CAF50;
 }
 div h2{
@@ -45,6 +42,8 @@ div h2{
 	font-style: italic;
   text-shadow: 1px 1px 2px white, 0 0 25px green, 0 0 5px darkgreen;
 }
+
+
 
 div h4{
   font-style: italic;
@@ -96,6 +95,10 @@ div h4{
   transform: translateY(4px);
 }
 
+.green{
+	text-align: center;
+  text-shadow: 1px 1px 2px white, 0 0 25px green, 0 0 5px darkgreen;
+}
 
 
 * {box-sizing: border-box}
