@@ -1,0 +1,213 @@
+body {
+  font-size: 28px;
+  background-color: silver;
+  background-image: url("D:\logo.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  margin-top:100px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+li a:hover {
+  background-color: #111;
+}
+
+.con{
+  color: blue;
+}
+li{
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  padding: 16px 75px;
+  text-decoration: none;
+}
+
+
+
+.active {
+  background-color: #4CAF50;
+}
+div h2{
+	text-align: center;
+	font-style: italic;
+  text-shadow: 1px 1px 2px white, 0 0 25px green, 0 0 5px darkgreen;
+}
+
+div h4{
+  font-style: italic;
+  text-shadow: 1px 1px 2px white, 0 0 25px blue, 0 0 5px darkblue;
+}
+.homebutton {
+  display: inline-block;
+  margin-top: 90px;
+  padding: 25px 80px;
+  font-size: 80px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.homebutton:hover {background-color: #3e8e41}
+
+.homebutton:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.homebutton2 {
+  display: inline-block;
+  padding: 25px 80px;
+  font-size: 80px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.homebutton2:hover {background-color: #3e8e41}
+
+.homebutton2:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+.signupbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Extra styles for the cancel button */
+.signinbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.signinbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+}
+
+h1 {
+
+    text-align: center;
+}
+
+p{
+
+	font-size: 20px;
+}
+.box {
+  background-color: lightgray;
+  width: 600px;
+  border: 15px ;
+  border-color: #F0FFFF;
+  padding: 50px;
+  margin: 20px;
+  text-align: left;
+  font-size: 20px;
+  }
+
+
+
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.signinbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.signinbtn:hover {
+  opacity: 0.8;
+}
+
+
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  height: 150px; 
+  width: 150px;
+  border-radius: 50%;
+}
+
