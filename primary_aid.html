@@ -1,31 +1,35 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="style.css">
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">   <!--AOS CDN css source-->
 </head>
 <body>
 
-<div class="header">
-  <h4><marquee  scrollamount="13" direction="right" style="background:gray">WELCOME TO OUR WEBSITE!!!</marquee></h4>
+<div class="marq">
+  <h4><marquee  scrollamount="13" direction="right" >WELCOME TO OUR WEBSITE!!!</marquee></h4>
   <h2>HEALTH-CARE SYSTEM</h2>
 </div>
 
-
-<ul>
-  <li><a class="active" href="home.html">Home</a></li>
-  <li><a class="active" href="primary_aid.html">primary aid</a></li>
-  <li><a class="active" href= "appointment.html">appointment</a></li>
-  <li><a class="active" href="healthtips.html">Health tips</a><li>
-  <li><a class="active" href="about.html">About</a></li>
-</ul>
-
+<div class="menu">
+        <nav class="mainmenu">
+          <ul>
+            <li><a class="active" href="home.html">Home</a></li>
+            <li><a class="active" href="primary_aid.html">Primary Aid</a></li>
+            <li><a class="active" href= "appointment.html">Appointment</a></li>
+            <li><a class="active" href="healthtips.html">Health Tips</a><li>
+            <li><a class="active" href="about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
 
 <center><h2 class="green">Primary Aid</h2></center><br><br>
 
-<h2> <b>.</b> Basic First Aid for Cardiac Arrest </h2>
+<h2> <b>1.</b> Basic First Aid for Cardiac Arrest </h2>
 
 
 
-<div class="box">
+<div class="box" data-aos="fade-right">
 
   <b> <p>1. Command someone to call 911 or the medical alert system for the locale.<br>
    2. Immediately start chest compressions regardless of your training. Compress hard and fast in the center of the chest, allowing recoil between compressions. Hand this task over to those who are trained if and when they arrive.<br>
@@ -33,11 +37,11 @@
      4.An AED should be applied and used. But it is essential not to delay chest compressions, so finding one should be commanded to someone else while you are doing chest compressions.</p></b>
 
 </div>
-<h2> <b>.</b> Basic First Aid for Bleeding  </h2>
+<h2> <b>2.</b> Basic First Aid for Bleeding  </h2>
 
 
 
-<div class="box">
+<div class="box" data-aos="fade-left">
 
   <b>
 
@@ -48,11 +52,11 @@
  </b>
 
 </div>
-<h2> <b>.</b> Basic First Aid for Burns  </h2>
+<h2> <b>3.</b> Basic First Aid for Burns  </h2>
 
 
 
-<div class="box">
+<div class="box" data-aos="fade-right">
 
   <b> 
 
@@ -65,11 +69,11 @@
 </b>
 
 </div>
-<h2> <b>.</b> Basic First Aid for Blisters  </h2>
+<h2> <b>4.</b> Basic First Aid for Blisters  </h2>
 
 
 
-<div class="box">
+<div class="box" data-aos="fade-left">
 
   <b> 
 
@@ -79,11 +83,11 @@ If the blister is large or painful—especially if the activity isn’t finished
 </b>
 
 </div>
-<h2> <b>.</b> Basic First Aid for Fractures </h2>
+<h2> <b>5.</b> Basic First Aid for Fractures </h2>
 
 
 
-<div class="box">
+<div class="box" data-aos="fade-right">
 
   <b> 
 
@@ -96,21 +100,21 @@ If the blister is large or painful—especially if the activity isn’t finished
 </b>
 
 </div>
-<h2> <b>.</b> Basic First Aid for Sprains  </h2>
+<h2> <b>6.</b> Basic First Aid for Sprains  </h2>
 
 
 
-<div class="box">
+<div class="box" data-aos="fade-left">
 
   <b><p> The symptoms of a sprain are almost exactly the same as that of a broken bone. When in doubt, first aid for sprains should be the same as broken bones. Immobilize the limb, apply a cold pack, elevate it, and take anti-inflammatory drugs. See your doctor for further diagnosis and treatment.</p></b>
 
 </div>
-<h2> <b>.</b>  Basic First Aid for Nosebleed
+<h2> <b>7.</b>  Basic First Aid for Nosebleed
 </h2>
 
 
 
-<div class="box">
+<div class="box" data-aos="fade-right">
 
   <b> 
 
@@ -121,11 +125,11 @@ If the blister is large or painful—especially if the activity isn’t finished
 
 </b>
 </div>
-<h2> <b>.</b> Basic First Aid for Frostbite  </h2>
+<h2> <b>8.</b> Basic First Aid for Frostbite  </h2>
 
 
 
-<div class="box">
+<div class="box" data-aos="fade-left">
 
   <b> 
 
@@ -135,11 +139,11 @@ Treating frostbite is a delicate procedure of gradual warming. If at all possibl
 </b>
 
 </div>
-<h2> <b>.</b>Basic First Aid for Bee Stings  </h2>
+<h2> <b>9.</b>Basic First Aid for Bee Stings  </h2>
 
 
 
-<div class="box">
+<div class="box" data-aos="fade-right">
 
   <b> 
 
@@ -153,11 +157,11 @@ Treating frostbite is a delicate procedure of gradual warming. If at all possibl
 </b>
 
 </div>
-<h2> <b>.</b> Basic First Aid for Jellyfish Stings </h2>
+<h2> <b>10.</b> Basic First Aid for Jellyfish Stings </h2>
 
 
 
-<div class="box">
+<div class="box" data-aos="fade-left">
 
   <b> 
 
@@ -170,6 +174,10 @@ Treating frostbite is a delicate procedure of gradual warming. If at all possibl
 </div>
 
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!--AOS CDN javascript source-->
 
+  <script>
+  AOS.init();
+</script> <!--initialize AOS for AOS library support-->
 </body>
 </html>

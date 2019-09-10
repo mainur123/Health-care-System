@@ -1,28 +1,31 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="style.css">
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">   <!--AOS CDN css source-->
 </head>
 <body>
 
-<div class="header">
-  <h4><marquee  scrollamount="13" direction="right" style="background:gray">WELCOME TO OUR WEBSITE!!!</marquee></h4>
+<div class="marq">
+  <h4><marquee  scrollamount="13" direction="right" >WELCOME TO OUR WEBSITE!!!</marquee></h4>
   <h2>HEALTH-CARE SYSTEM</h2>
 </div>
 
-
-<ul>
-  <li><a class="active" href="home.html">Home</a></li>
-  <li><a class="active" href="primary_aid.html">primary aid</a></li>
-  <li><a class="active" href= "appointment.html">appointment</a></li>
-  <li><a class="active" href="healthtips.html">Health tips</a><li>
-  <li><a class="active" href="about.html">About</a></li>
-</ul>
-
-
+<div class="menu">
+        <nav class="mainmenu">
+          <ul>
+            <li><a class="active" href="home.html">Home</a></li>
+            <li><a class="active" href="primary_aid.html">Primary Aid</a></li>
+            <li><a class="active" href= "appointment.html">Appointment</a></li>
+            <li><a class="active" href="healthtips.html">Health Tips</a><li>
+            <li><a class="active" href="about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
 
 <p><center><h2 class="green">ABOUT</h2></center></p>
 
-	<p> Health Care System is the best tool for both doctors and patients. This is a powerful medical doctor appointment scheduling software to meet all challenges that may surface during your appointment scheduling. The process of booking appointments and scheduling management of Health Care System is easy for both the doctors and patients. This website also serve the user by giving <b>Health Tips </b>and <b>Primary Aids.</b></p>
+	<p> Health Care System is the best tool for both doctors and patients. This is a powerful medical doctor appointment scheduling software to meet all challenges that may surface during your appointment scheduling. The process of booking appointments and scheduling management of Health Care System is easy for both the doctors and patients. This website also serve the user by giving <span><a href="healthtips.html">Health Tips</a> </span> and <a href="healthtips.html">Primary Aids.</a></p>
 	<h2> Hello Doctors!! </h2>
 		<p>You have to register in our website with your necessary details like name,designation,speciality,department name.After successfully registration you can log in with your username,password and can see your patient list who request for your appointment.</p>
 
@@ -30,6 +33,12 @@
 		<p>You can see the Doctors list by regitration in our website.Then you have to submit a request for appointment of your desired doctor. <br><br>
 	 For attracting new patients, a medical practice must adopt digitization. By using Health Care System make a start to provide digital healthcare.</p>
 
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!--AOS CDN javascript source-->
+
+  <script>
+  AOS.init();
+</script> <!--initialize AOS for AOS library support-->
 
 
 </body>

@@ -1,22 +1,32 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="style.css">
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">   <!--AOS CDN css source-->
+
 </head>
 <body>
+<div class="marq">
+  <h4><marquee  scrollamount="13" direction="right">WELCOME TO OUR WEBSITE!!!</marquee></h4>
 
-<div class="header">
-  <h4><marquee  scrollamount="13" direction="right" style="background:gray">WELCOME TO OUR WEBSITE!!!</marquee></h4>
+<center><IMG SRC="logo.png" ALT="some text" width=150px height=110px></center>
   <h2>HEALTH-CARE SYSTEM</h2>
+
+
+
 </div>
 
-<ul>
-  <li><a class="active" href="home.html">Home</a></li>
-  <li><a class="active" href="primary_aid.html">primary aid</a></li>
-  <li><a class="active" href= "appointment.html">appointment</a></li>
-  <li><a class="active" href="healthtips.html">Health tips</a><li>
-  <li><a class="active" href="about.html">About</a></li>
-</ul>
-
+<div class="menu">
+        <nav class="mainmenu">
+          <ul>
+            <li><a class="active" href="home.html">Home</a></li>
+            <li><a class="active" href="primary_aid.html">Primary Aid</a></li>
+            <li><a class="active" href= "appointment.html">Appointment</a></li>
+            <li><a class="active" href="healthtips.html">Health Tips</a><li>
+            <li><a class="active" href="about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
 <br>
 <p><center><h2 class="green">HOME</h2></center></p>
 <body>
@@ -24,20 +34,41 @@
 <center>
 <button class="homebutton" onclick="window.location.href = 'doctor.html';">DOCTOR</button> 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<button class="homebutton2">PATIENT</button>
+<button class="homebutton2" onclick="window.location.href = 'patient.html';">PATIENT</button>
 </center>
 <br>
 <br>
 
 <center><h2 class="green">Services</h2></center>
 <br>
-<center>Heart problem<br>
-<img src="image/heart.png" alt="heart" width="300" height="250"><br><br><br>
-Bones problem<br>
-<img src="image/bones.png" alt="bones" width="300" height="250"><br><br><br>
-Eye problem<br>
-<img src="image/eye.jpg" alt="eye" width="300" height="250"><br><br><br>
 
-<center>
+
+<div  data-aos="fade-right">
+		<center>
+		<img src="image/heart.png" alt="heart" width="300" height="250"><br> <h1> Heart Problem </h1> </center>
+	</div>
+
+	<div  data-aos="fade-left">
+		<center>
+		<img src="image/eye.jpg" alt="eye" width="300" height="250"><br> <h1> Eye Problem </h1> </center>
+	</div>
+
+	<div  data-aos="fade-right">
+		<center>
+		<img src="image/bones.png" alt="bones" width="300" height="250"><br> <h1> Bones Problem </h1> </center>
+	</div>
+
+
+
+
+
+
+
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!--AOS CDN javascript source-->
+
+	<script>
+  AOS.init();
+</script> <!--initialize AOS for AOS library support-->
+
 </body>
 </html>

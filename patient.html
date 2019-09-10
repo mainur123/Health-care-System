@@ -28,18 +28,15 @@
 <body>
 
 
-<form action="/action_page.php" style="border:1px solid #ccc" data-aos="zoom-in-up" data-aos-duration="1500">
+<form action="insert.php" method="post" style="border:1px solid #ccc" data-aos="zoom-in-up" data-aos-duration="1500">
   <div class="container">
-  	<center><img src="animateddoc.gif"></center>
-        <h1>Sign Up</h1>
+  	<center><img src="patient1.png" height="200px" width="200px"></center>
+    <h1>Sign Up</h1>
     <p>Please fill in this form to create an account.</p>
     <hr>
 
     <label for="name"><b>Name</b></label>
     <input type="text" placeholder="Enter Name" name="name" required>
-
-    <label for="Specialist"><b>Specialist On</b></label>
-    <input type="text" placeholder="Specialist On" name="Specialist" required>
 
     <label for="email"><b>Email</b></label>
     <input type="text" placeholder="Enter Email" name="email" required>
@@ -62,9 +59,8 @@
     
 
     <div class="clearfix">
-      <button type="button" class="signinbtn" onclick="window.location.href = 'docsignin.html';">Sign In</button>
+      <button type="button" class="signinbtn" onclick="window.location.href = 'patientsignin.html';">Sign In</button>
       <button type="submit" class="signupbtn">Sign Up</button>
-    </div>
     </div>
   </div>
 </form>

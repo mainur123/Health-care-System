@@ -1,45 +1,54 @@
 body {
   font-size: 28px;
-  background-color: silver;
-  background-image: url("D:\logo.png");
-  background-repeat: no-repeat;
-  background-position: center top;
+  background-image: url("bg1.jpg");
   margin-top:100px;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  position: -webkit-sticky; /* Safari */
+/*nav bar*/
+.menu{
+  background-color: #49474D;
   position: sticky;
   top: 0;
+  z-index: 9999;
 }
-li a:hover {
-  background-color: #111;
+.menu .mainmenu{
+  overflow: hidden;
+  margin-left: 25%;
+  margin-right: 14%;
 }
-
-li{
+.menu .mainmenu ul{
+  margin: 0;
+  padding: 0;
+}
+.menu .mainmenu ul li{
   float: left;
+  list-style: none;
+  transition: 1s;
 }
-
-li a {
-  display: block;
-  color: white;
-  padding: 16px 75px;
+.menu .mainmenu ul li a{
   text-decoration: none;
+  display: block;
+  padding: 14.1px 18.5px;
+  color: #E6E2DE;
+  transition: 1s;
 }
-
-
+.menu .mainmenu ul li:hover{
+  background-color: #002746;
+  color: #901247;
+}
+.menu .mainmenu ul li a:hover{
+  color: #EB6309;
+}
 
 .active:active {
   background-color: #4CAF50;
 }
+/*nav bar end*/
+
 div h2{
 	text-align: center;
 	font-style: italic;
+  font-size: 50px;
   text-shadow: 1px 1px 2px white, 0 0 25px green, 0 0 5px darkgreen;
 }
 
@@ -47,7 +56,8 @@ div h2{
 
 div h4{
   font-style: italic;
-  text-shadow: 1px 1px 2px white, 0 0 25px blue, 0 0 5px darkblue;
+  background-color: #D0D3D4;
+  text-shadow: 1px 1px 2px white, 0 0 25px white, 0 0 5px white;
 }
 .homebutton {
   display: inline-block;
@@ -95,16 +105,13 @@ div h4{
   transform: translateY(4px);
 }
 
-.green{
-	text-align: center;
-  text-shadow: 1px 1px 2px white, 0 0 25px green, 0 0 5px darkgreen;
-}
 
 
 * {box-sizing: border-box}
 
+/*form*/
 /* Full-width input fields */
-input[type=text], input[type=password] {
+input[type=text],input[type=date], input[type=password] {
   width: 100%;
   padding: 15px;
   margin: 5px 0 22px 0;
@@ -113,32 +120,31 @@ input[type=text], input[type=password] {
   background: #f1f1f1;
 }
 
-input[type=text]:focus, input[type=password]:focus {
+input[type=text]:focus, input[type=password], input[type=date]:focus {
   background-color: #ddd;
   outline: none;
 }
 
-hr {
-  border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
-}
 
-.signupbtn {
+
+.signupbtn, .signinbtn {
   padding: 14px 20px;
-  background-color: #f44336;
-}
-
-/* Extra styles for the cancel button */
-.signinbtn {
-  padding: 14px 20px;
-  background-color: #f44336;
-}
-
-/* Float cancel and signup buttons and add an equal width */
-.signinbtn, .signupbtn {
+  background-color: gray;
   float: left;
   width: 50%;
 }
+
+.signinbtn2{
+  padding: 14px 20px;
+  background-color: gray;
+  width: 100%;
+}
+
+.signupbtn:hover {background-color: #525252}
+
+.signinbtn:hover {background-color: #525252}
+
+.signinbtn2:hover {background-color: #525252}
 
 /* Add padding to container elements */
 .container {
@@ -151,9 +157,8 @@ hr {
   clear: both;
   display: table;
 }
+/*form end*/
 
-
-}
 
 h1 {
 
@@ -166,9 +171,9 @@ p{
 }
 .box {
   background-color: lightgray;
-  width: 600px;
-  border: 15px ;
-  border-color: #F0FFFF;
+  border: 2px solid black;
+  border-radius: 5px;
+
   padding: 50px;
   margin: 20px;
   text-align: left;
@@ -187,19 +192,6 @@ input[type=text], input[type=password] {
   box-sizing: border-box;
 }
 
-.signinbtn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-}
-
-.signinbtn:hover {
-  opacity: 0.8;
-}
 
 
 
@@ -214,3 +206,8 @@ img.avatar {
   border-radius: 50%;
 }
 
+/*
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}*/
