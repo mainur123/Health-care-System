@@ -6,6 +6,7 @@ include 'connectn.php';
 <link rel="stylesheet" type="text/css" href="style.css">
 
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">   <!--AOS CDN css source-->
+
 </head>
 <body>
 
@@ -22,13 +23,14 @@ include 'connectn.php';
             <li><a class="active" href= "appointment.php">Appointment</a></li>
             <li><a class="active" href="healthtips.html">Health Tips</a><li>
             <li><a class="active" href="about.html">About</a></li>
+            <li><a class="active" href="register.php">Admin</a></li>
           </ul>
         </nav>
       </div>
 
 
 
-<p><center><h2 class="green">APPOINTMENT List</h2></center></p>
+<p><center><h2 class="green">APPOINTMENT LIST</h2></center></p>
 
 <?php
 
@@ -74,9 +76,21 @@ foreach($patients as $patient): ?>
       <br>
     </h5>
     <h5 align="center"> 
+      <?php echo "Age:";?>
       <?php echo htmlspecialchars($patient['age']); ?>
       <br>
     </h5>
+    <?php
+    $Displayform=True;
+    if(isset($_POST['submit'])){
+      $Displayform= False;
+
+    }
+    if($Displayform){
+
+      ?>
+
+
     
     <div align="right">
         <form action="" method="post" >
@@ -85,8 +99,14 @@ foreach($patients as $patient): ?>
         <br>
           <textarea name="title"></textarea><br>
           <input type="submit" name="submit" value="post">
+          
+          
+
+  
         </form>
     </div>
+    <?php
+  }?>
   </div>
 
 
@@ -97,9 +117,9 @@ if(isset($_POST['submit'])){
   $title=$_POST['title'];
   $pid=$_POST['pid'];
   $q1="insert into post (title,pid) values('$title','$pid')";
-  $q2="insert into notification(pid,title,read_n) values('$pid','$title','1')";
+  //$q2="insert into notification(pid,title,read_n) values('$pid','$title','1')";
   $pdo->query($q1);
-  $pdo->query($q2);
+ // $pdo->query($q2);
   echo "posted";
 
 }

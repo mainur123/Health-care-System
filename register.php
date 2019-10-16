@@ -30,6 +30,7 @@
             <li><a class="active" href= "appointment.php">Appointment</a></li>
             <li><a class="active" href="healthtips.html">Health Tips</a><li>
             <li><a class="active" href="about.html">About</a></li>
+            <li><a class="active" href="register.php">Admin</a></li>
           </ul>
         </nav>
       </div>
@@ -79,7 +80,7 @@
 		</form>
 		<script language="javascript">
 	var password;
-	var pass1="adminpass";
+	var pass1="admin";
 	password=prompt('ENTER password TO view page',' ');
 	if(password==pass1)
 		alert('correct password,click to enter.');
@@ -120,10 +121,8 @@
 							if($query_run)
 							{
 								echo '<script type="text/javascript">alert("User Registered.. Welcome")</script>';
-								$_SESSION['username'] = $username;
-								$_SESSION['password'] = $password;
-								$_SESSION['id'] = $id;
-								header( "Location: homepage.php");
+								
+								header( "Location: congratulation.html");
 							}
 							else
 							{

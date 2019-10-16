@@ -28,6 +28,7 @@
             <li><a class="active" href= "appointment.php">Appointment</a></li>
             <li><a class="active" href="healthtips.html">Health Tips</a><li>
             <li><a class="active" href="about.html">About</a></li>
+            <li><a class="active" href="register.php">Admin</a></li>
           </ul>
         </nav>
       </div>
@@ -94,10 +95,8 @@
 							if($query_run)
 							{
 								echo '<script type="text/javascript">alert("User Registered.. Welcome")</script>';
-								$_SESSION['username'] = $username;
-								$_SESSION['password'] = $password;
-								$_SESSION['id'] = $id;
-								header( "Location: phomepage.php");
+							
+								header( "Location: congratulation.html");
 							}
 							else
 							{
@@ -121,5 +120,12 @@
 			}
 		?>
 	</div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!--AOS CDN javascript source-->
+
+  <script>
+  AOS.init();
+</script> <!--initialize AOS for AOS library support-->
+
 </body>
 </html>

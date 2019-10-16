@@ -29,6 +29,7 @@
             <li><a class="active" href= "appointment.php">Appointment</a></li>
             <li><a class="active" href="healthtips.html">Health Tips</a><li>
             <li><a class="active" href="about.html">About</a></li>
+            <li><a class="active" href="register.php">Admin</a></li>
           </ul>
         </nav>
       </div>

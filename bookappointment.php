@@ -9,6 +9,7 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">   <!--AOS CDN css source-->
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -25,15 +26,16 @@
             <li><a class="active" href= "appointment.php">Appointment</a></li>
             <li><a class="active" href="healthtips.html">Health Tips</a><li>
             <li><a class="active" href="about.html">About</a></li>
+            <li><a class="active" href="register.php">Admin</a></li>
           </ul>
         </nav>
       </div>
       <form action="bookappointment.php" method="post">
-      <div class="inner_container">
+      <div class="inner_container"><br><br>
         <label><b> Patient Fullname</b></label>
         <input type="text" placeholder="Type your fullname" name="fullname" required>
-        <br><br>
         <br>
+        
         
         <br>
         <label><b> Patient ID</b></label>
@@ -50,7 +52,7 @@
         
         
         
-        <button name="Book" class="sign_up_btn" type="submit">Confirm</button>
+        <button name="Book" class="back_btn" type="submit">Confirm</button>
 
         
         
